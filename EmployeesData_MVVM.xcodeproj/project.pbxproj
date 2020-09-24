@@ -15,6 +15,7 @@
 		0554B5AE251D040700405A7C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0554B5AC251D040700405A7C /* LaunchScreen.storyboard */; };
 		0554B5B9251D040700405A7C /* EmployeesData_MVVMTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0554B5B8251D040700405A7C /* EmployeesData_MVVMTests.swift */; };
 		0554B5C4251D040700405A7C /* EmployeesData_MVVMUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0554B5C3251D040700405A7C /* EmployeesData_MVVMUITests.swift */; };
+		0554B5E5251D0AC300405A7C /* Employees.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0554B5E4251D0AC300405A7C /* Employees.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		0554B5BF251D040700405A7C /* EmployeesData_MVVMUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EmployeesData_MVVMUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0554B5C3251D040700405A7C /* EmployeesData_MVVMUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeesData_MVVMUITests.swift; sourceTree = "<group>"; };
 		0554B5C5251D040700405A7C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0554B5E4251D0AC300405A7C /* Employees.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Employees.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,6 +136,7 @@
 		0554B5D4251D041B00405A7C /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				0554B5E4251D0AC300405A7C /* Employees.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -307,6 +310,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0554B5A6251D040600405A7C /* ViewController.swift in Sources */,
+				0554B5E5251D0AC300405A7C /* Employees.swift in Sources */,
 				0554B5A2251D040600405A7C /* AppDelegate.swift in Sources */,
 				0554B5A4251D040600405A7C /* SceneDelegate.swift in Sources */,
 			);
