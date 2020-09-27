@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		05092AA72520E2EB000FC83E /* EmployeesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05092AA62520E2EB000FC83E /* EmployeesViewModel.swift */; };
+		05092AAC2520E314000FC83E /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05092AAB2520E314000FC83E /* Networking.swift */; };
 		0554B5A2251D040600405A7C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0554B5A1251D040600405A7C /* AppDelegate.swift */; };
 		0554B5A4251D040600405A7C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0554B5A3251D040600405A7C /* SceneDelegate.swift */; };
 		0554B5A6251D040600405A7C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0554B5A5251D040600405A7C /* ViewController.swift */; };
@@ -36,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		05092AA62520E2EB000FC83E /* EmployeesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeesViewModel.swift; sourceTree = "<group>"; };
+		05092AAB2520E314000FC83E /* Networking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
 		0554B59E251D040600405A7C /* EmployeesData_MVVM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EmployeesData_MVVM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0554B5A1251D040600405A7C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0554B5A3251D040600405A7C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -144,6 +148,7 @@
 		0554B5D5251D042E00405A7C /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				05092AA62520E2EB000FC83E /* EmployeesViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -175,6 +180,7 @@
 		0554B5DA251D04FC00405A7C /* Networking */ = {
 			isa = PBXGroup;
 			children = (
+				05092AAB2520E314000FC83E /* Networking.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -312,6 +318,8 @@
 				0554B5A6251D040600405A7C /* ViewController.swift in Sources */,
 				0554B5E5251D0AC300405A7C /* Employees.swift in Sources */,
 				0554B5A2251D040600405A7C /* AppDelegate.swift in Sources */,
+				05092AAC2520E314000FC83E /* Networking.swift in Sources */,
+				05092AA72520E2EB000FC83E /* EmployeesViewModel.swift in Sources */,
 				0554B5A4251D040600405A7C /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
