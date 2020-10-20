@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="U7O-K7-lys">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Cart-->
+        <scene sceneID="rTO-hW-ScY">
+            <objects>
+                <viewController id="8BH-jv-qak" customClass="CartVC" customModule="BarcodeScanner" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="lQw-Sp-OVE">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="8Pv-fk-sCY">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="500.5"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="8BH-jv-qak" id="Fn1-z7-x6B"/>
+                                    <outlet property="delegate" destination="8BH-jv-qak" id="1Xs-VR-OQz"/>
+                                </connections>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wKx-lp-b7d">
+                                <rect key="frame" x="157" y="541" width="60" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Pay Now"/>
+                                <connections>
+                                    <action selector="PayNowClicked:" destination="8BH-jv-qak" eventType="touchUpInside" id="qBu-Fi-HzP"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="8Pv-fk-sCY" firstAttribute="trailing" secondItem="fqA-DU-vkq" secondAttribute="trailing" id="5kz-aS-k1K"/>
+                            <constraint firstItem="8Pv-fk-sCY" firstAttribute="top" secondItem="fqA-DU-vkq" secondAttribute="top" id="8vd-FT-su0"/>
+                            <constraint firstItem="8Pv-fk-sCY" firstAttribute="leading" secondItem="fqA-DU-vkq" secondAttribute="leading" id="Jbo-QU-Daq"/>
+                            <constraint firstItem="8Pv-fk-sCY" firstAttribute="height" secondItem="lQw-Sp-OVE" secondAttribute="height" multiplier="0.75" id="K4H-Rl-PGF"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="fqA-DU-vkq"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Cart" image="cart" catalog="system" id="CHk-o7-KmT"/>
+                    <navigationItem key="navigationItem" id="JEU-hD-6hL"/>
+                    <connections>
+                        <outlet property="ItemsTableView" destination="8Pv-fk-sCY" id="nII-Bp-pxd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7fb-iw-wbH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1607" y="860"/>
+        </scene>
+        <!--Scan-->
+        <scene sceneID="cfd-6w-UIn">
+            <objects>
+                <viewController id="jo6-ta-LtH" customClass="ScanVC" customModule="BarcodeScanner" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jXz-jc-spF">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="3Zi-m0-Dvr">
+                                <rect key="frame" x="28" y="209" width="319" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="433-UA-mIf"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="3Zi-m0-Dvr" firstAttribute="centerY" secondItem="hth-qj-fr2" secondAttribute="centerY" id="jMX-87-SUy"/>
+                            <constraint firstItem="3Zi-m0-Dvr" firstAttribute="width" secondItem="jXz-jc-spF" secondAttribute="width" multiplier="0.85" id="nv9-OZ-Hsv"/>
+                            <constraint firstItem="3Zi-m0-Dvr" firstAttribute="centerX" secondItem="hth-qj-fr2" secondAttribute="centerX" id="snl-Rr-PhY"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="hth-qj-fr2"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Scan" image="barcode.viewfinder" catalog="system" id="uab-6I-jfL"/>
+                    <connections>
+                        <outlet property="imgScanner" destination="3Zi-m0-Dvr" id="i2c-jo-S3d"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2Z3-4V-vYH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1405.5999999999999" y="45.42728635682159"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="Biw-AZ-xQj">
+            <objects>
+                <tabBarController id="U7O-K7-lys" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Q2B-Lf-42V">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="jo6-ta-LtH" kind="relationship" relationship="viewControllers" id="exO-Vw-9EJ"/>
+                        <segue destination="8BH-jv-qak" kind="relationship" relationship="viewControllers" id="Y3J-Fl-q1y"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NK4-w7-tnN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="514" y="349"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="barcode.viewfinder" catalog="system" width="128" height="114"/>
+        <image name="cart" catalog="system" width="128" height="102"/>
+    </resources>
+</document>

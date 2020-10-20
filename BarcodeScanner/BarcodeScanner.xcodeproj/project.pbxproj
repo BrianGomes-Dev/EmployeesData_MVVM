@@ -1,0 +1,796 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		23EA6C14EA3639785EF46DB2 /* Pods_BarcodeScannerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6026B57C015E5FA72B1B4030 /* Pods_BarcodeScannerTests.framework */; };
+		7A246D57253E638000CF5A8A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A246D56253E638000CF5A8A /* AppDelegate.swift */; };
+		7A246D5B253E638000CF5A8A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A246D5A253E638000CF5A8A /* ViewController.swift */; };
+		7A246D5E253E638000CF5A8A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A246D5C253E638000CF5A8A /* Main.storyboard */; };
+		7A246D60253E638100CF5A8A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7A246D5F253E638100CF5A8A /* Assets.xcassets */; };
+		7A246D63253E638100CF5A8A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A246D61253E638100CF5A8A /* LaunchScreen.storyboard */; };
+		7A246D6E253E638100CF5A8A /* BarcodeScannerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A246D6D253E638100CF5A8A /* BarcodeScannerTests.swift */; };
+		7A246D79253E638100CF5A8A /* BarcodeScannerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A246D78253E638100CF5A8A /* BarcodeScannerUITests.swift */; };
+		7ADD977B253F023F00E85939 /* ScanVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ADD977A253F023F00E85939 /* ScanVC.swift */; };
+		7ADD9780253F025600E85939 /* CartVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ADD977F253F025600E85939 /* CartVC.swift */; };
+		7ADD978A253F048200E85939 /* ItemsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ADD9788253F048200E85939 /* ItemsCell.swift */; };
+		7ADD978B253F048200E85939 /* ItemsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7ADD9789253F048200E85939 /* ItemsCell.xib */; };
+		A64D7D0F478921CD8D158002 /* Pods_BarcodeScanner.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18598A368088508497EF5460 /* Pods_BarcodeScanner.framework */; };
+		E4BE3C6715EF3052BC4772A4 /* Pods_BarcodeScanner_BarcodeScannerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0371A906E7C2E8481CEB089 /* Pods_BarcodeScanner_BarcodeScannerUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7A246D6A253E638100CF5A8A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7A246D4B253E638000CF5A8A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7A246D52253E638000CF5A8A;
+			remoteInfo = BarcodeScanner;
+		};
+		7A246D75253E638100CF5A8A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7A246D4B253E638000CF5A8A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7A246D52253E638000CF5A8A;
+			remoteInfo = BarcodeScanner;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		18598A368088508497EF5460 /* Pods_BarcodeScanner.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BarcodeScanner.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		303D3318EC77912E6E2FC342 /* Pods-BarcodeScanner.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BarcodeScanner.release.xcconfig"; path = "Target Support Files/Pods-BarcodeScanner/Pods-BarcodeScanner.release.xcconfig"; sourceTree = "<group>"; };
+		326C008633EF6751292938B5 /* Pods-BarcodeScannerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BarcodeScannerTests.release.xcconfig"; path = "Target Support Files/Pods-BarcodeScannerTests/Pods-BarcodeScannerTests.release.xcconfig"; sourceTree = "<group>"; };
+		6026B57C015E5FA72B1B4030 /* Pods_BarcodeScannerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BarcodeScannerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		61D46D875F1E1261B2A4698E /* Pods-BarcodeScanner-BarcodeScannerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BarcodeScanner-BarcodeScannerUITests.release.xcconfig"; path = "Target Support Files/Pods-BarcodeScanner-BarcodeScannerUITests/Pods-BarcodeScanner-BarcodeScannerUITests.release.xcconfig"; sourceTree = "<group>"; };
+		7A246D53253E638000CF5A8A /* BarcodeScanner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BarcodeScanner.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7A246D56253E638000CF5A8A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7A246D5A253E638000CF5A8A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		7A246D5D253E638000CF5A8A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7A246D5F253E638100CF5A8A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7A246D62253E638100CF5A8A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7A246D64253E638100CF5A8A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7A246D69253E638100CF5A8A /* BarcodeScannerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BarcodeScannerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7A246D6D253E638100CF5A8A /* BarcodeScannerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarcodeScannerTests.swift; sourceTree = "<group>"; };
+		7A246D6F253E638100CF5A8A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7A246D74253E638100CF5A8A /* BarcodeScannerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BarcodeScannerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7A246D78253E638100CF5A8A /* BarcodeScannerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarcodeScannerUITests.swift; sourceTree = "<group>"; };
+		7A246D7A253E638100CF5A8A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7ADD977A253F023F00E85939 /* ScanVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanVC.swift; sourceTree = "<group>"; };
+		7ADD977F253F025600E85939 /* CartVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartVC.swift; sourceTree = "<group>"; };
+		7ADD9788253F048200E85939 /* ItemsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsCell.swift; sourceTree = "<group>"; };
+		7ADD9789253F048200E85939 /* ItemsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ItemsCell.xib; sourceTree = "<group>"; };
+		9D79EA6A0CF88470E099FD65 /* Pods-BarcodeScanner-BarcodeScannerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BarcodeScanner-BarcodeScannerUITests.debug.xcconfig"; path = "Target Support Files/Pods-BarcodeScanner-BarcodeScannerUITests/Pods-BarcodeScanner-BarcodeScannerUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		B48FA49EBD369E1723E798D4 /* Pods-BarcodeScanner.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BarcodeScanner.debug.xcconfig"; path = "Target Support Files/Pods-BarcodeScanner/Pods-BarcodeScanner.debug.xcconfig"; sourceTree = "<group>"; };
+		C0371A906E7C2E8481CEB089 /* Pods_BarcodeScanner_BarcodeScannerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BarcodeScanner_BarcodeScannerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CDBC2B7B336F405EFB1E61D3 /* Pods-BarcodeScannerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BarcodeScannerTests.debug.xcconfig"; path = "Target Support Files/Pods-BarcodeScannerTests/Pods-BarcodeScannerTests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7A246D50253E638000CF5A8A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A64D7D0F478921CD8D158002 /* Pods_BarcodeScanner.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7A246D66253E638100CF5A8A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				23EA6C14EA3639785EF46DB2 /* Pods_BarcodeScannerTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7A246D71253E638100CF5A8A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E4BE3C6715EF3052BC4772A4 /* Pods_BarcodeScanner_BarcodeScannerUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		139E24B2DC1FF6909948FE15 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B48FA49EBD369E1723E798D4 /* Pods-BarcodeScanner.debug.xcconfig */,
+				303D3318EC77912E6E2FC342 /* Pods-BarcodeScanner.release.xcconfig */,
+				9D79EA6A0CF88470E099FD65 /* Pods-BarcodeScanner-BarcodeScannerUITests.debug.xcconfig */,
+				61D46D875F1E1261B2A4698E /* Pods-BarcodeScanner-BarcodeScannerUITests.release.xcconfig */,
+				CDBC2B7B336F405EFB1E61D3 /* Pods-BarcodeScannerTests.debug.xcconfig */,
+				326C008633EF6751292938B5 /* Pods-BarcodeScannerTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		77C1C73010CAA9093DF6EC0C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				18598A368088508497EF5460 /* Pods_BarcodeScanner.framework */,
+				C0371A906E7C2E8481CEB089 /* Pods_BarcodeScanner_BarcodeScannerUITests.framework */,
+				6026B57C015E5FA72B1B4030 /* Pods_BarcodeScannerTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7A246D4A253E638000CF5A8A = {
+			isa = PBXGroup;
+			children = (
+				7A246D55253E638000CF5A8A /* BarcodeScanner */,
+				7A246D6C253E638100CF5A8A /* BarcodeScannerTests */,
+				7A246D77253E638100CF5A8A /* BarcodeScannerUITests */,
+				7A246D54253E638000CF5A8A /* Products */,
+				139E24B2DC1FF6909948FE15 /* Pods */,
+				77C1C73010CAA9093DF6EC0C /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		7A246D54253E638000CF5A8A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7A246D53253E638000CF5A8A /* BarcodeScanner.app */,
+				7A246D69253E638100CF5A8A /* BarcodeScannerTests.xctest */,
+				7A246D74253E638100CF5A8A /* BarcodeScannerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7A246D55253E638000CF5A8A /* BarcodeScanner */ = {
+			isa = PBXGroup;
+			children = (
+				7ADD9787253F042E00E85939 /* Controllers */,
+				7ADD9786253F042100E85939 /* Views */,
+				7ADD9785253F040D00E85939 /* Models */,
+				7ADD9784253F03FE00E85939 /* TableViewCells */,
+				7A246D56253E638000CF5A8A /* AppDelegate.swift */,
+				7A246D5A253E638000CF5A8A /* ViewController.swift */,
+				7A246D5C253E638000CF5A8A /* Main.storyboard */,
+				7A246D5F253E638100CF5A8A /* Assets.xcassets */,
+				7A246D61253E638100CF5A8A /* LaunchScreen.storyboard */,
+				7A246D64253E638100CF5A8A /* Info.plist */,
+			);
+			path = BarcodeScanner;
+			sourceTree = "<group>";
+		};
+		7A246D6C253E638100CF5A8A /* BarcodeScannerTests */ = {
+			isa = PBXGroup;
+			children = (
+				7A246D6D253E638100CF5A8A /* BarcodeScannerTests.swift */,
+				7A246D6F253E638100CF5A8A /* Info.plist */,
+			);
+			path = BarcodeScannerTests;
+			sourceTree = "<group>";
+		};
+		7A246D77253E638100CF5A8A /* BarcodeScannerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				7A246D78253E638100CF5A8A /* BarcodeScannerUITests.swift */,
+				7A246D7A253E638100CF5A8A /* Info.plist */,
+			);
+			path = BarcodeScannerUITests;
+			sourceTree = "<group>";
+		};
+		7ADD9784253F03FE00E85939 /* TableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				7ADD9788253F048200E85939 /* ItemsCell.swift */,
+				7ADD9789253F048200E85939 /* ItemsCell.xib */,
+			);
+			path = TableViewCells;
+			sourceTree = "<group>";
+		};
+		7ADD9785253F040D00E85939 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		7ADD9786253F042100E85939 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		7ADD9787253F042E00E85939 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				7ADD977A253F023F00E85939 /* ScanVC.swift */,
+				7ADD977F253F025600E85939 /* CartVC.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7A246D52253E638000CF5A8A /* BarcodeScanner */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7A246D7D253E638100CF5A8A /* Build configuration list for PBXNativeTarget "BarcodeScanner" */;
+			buildPhases = (
+				51567C3FC062FCF14FEB1F6C /* [CP] Check Pods Manifest.lock */,
+				7A246D4F253E638000CF5A8A /* Sources */,
+				7A246D50253E638000CF5A8A /* Frameworks */,
+				7A246D51253E638000CF5A8A /* Resources */,
+				A53F2A9130F3B23C5FAA00A6 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BarcodeScanner;
+			productName = BarcodeScanner;
+			productReference = 7A246D53253E638000CF5A8A /* BarcodeScanner.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7A246D68253E638100CF5A8A /* BarcodeScannerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7A246D80253E638100CF5A8A /* Build configuration list for PBXNativeTarget "BarcodeScannerTests" */;
+			buildPhases = (
+				AC1597484D206392B72C1AA5 /* [CP] Check Pods Manifest.lock */,
+				7A246D65253E638100CF5A8A /* Sources */,
+				7A246D66253E638100CF5A8A /* Frameworks */,
+				7A246D67253E638100CF5A8A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7A246D6B253E638100CF5A8A /* PBXTargetDependency */,
+			);
+			name = BarcodeScannerTests;
+			productName = BarcodeScannerTests;
+			productReference = 7A246D69253E638100CF5A8A /* BarcodeScannerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		7A246D73253E638100CF5A8A /* BarcodeScannerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7A246D83253E638100CF5A8A /* Build configuration list for PBXNativeTarget "BarcodeScannerUITests" */;
+			buildPhases = (
+				92E3B23432BB170B8A722551 /* [CP] Check Pods Manifest.lock */,
+				7A246D70253E638100CF5A8A /* Sources */,
+				7A246D71253E638100CF5A8A /* Frameworks */,
+				7A246D72253E638100CF5A8A /* Resources */,
+				458C2CBB68DFD493405B43BC /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7A246D76253E638100CF5A8A /* PBXTargetDependency */,
+			);
+			name = BarcodeScannerUITests;
+			productName = BarcodeScannerUITests;
+			productReference = 7A246D74253E638100CF5A8A /* BarcodeScannerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7A246D4B253E638000CF5A8A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1200;
+				LastUpgradeCheck = 1200;
+				TargetAttributes = {
+					7A246D52253E638000CF5A8A = {
+						CreatedOnToolsVersion = 12.0.1;
+					};
+					7A246D68253E638100CF5A8A = {
+						CreatedOnToolsVersion = 12.0.1;
+						TestTargetID = 7A246D52253E638000CF5A8A;
+					};
+					7A246D73253E638100CF5A8A = {
+						CreatedOnToolsVersion = 12.0.1;
+						TestTargetID = 7A246D52253E638000CF5A8A;
+					};
+				};
+			};
+			buildConfigurationList = 7A246D4E253E638000CF5A8A /* Build configuration list for PBXProject "BarcodeScanner" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7A246D4A253E638000CF5A8A;
+			productRefGroup = 7A246D54253E638000CF5A8A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7A246D52253E638000CF5A8A /* BarcodeScanner */,
+				7A246D68253E638100CF5A8A /* BarcodeScannerTests */,
+				7A246D73253E638100CF5A8A /* BarcodeScannerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7A246D51253E638000CF5A8A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7ADD978B253F048200E85939 /* ItemsCell.xib in Resources */,
+				7A246D63253E638100CF5A8A /* LaunchScreen.storyboard in Resources */,
+				7A246D60253E638100CF5A8A /* Assets.xcassets in Resources */,
+				7A246D5E253E638000CF5A8A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7A246D67253E638100CF5A8A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7A246D72253E638100CF5A8A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		458C2CBB68DFD493405B43BC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BarcodeScanner-BarcodeScannerUITests/Pods-BarcodeScanner-BarcodeScannerUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BarcodeScanner-BarcodeScannerUITests/Pods-BarcodeScanner-BarcodeScannerUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BarcodeScanner-BarcodeScannerUITests/Pods-BarcodeScanner-BarcodeScannerUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		51567C3FC062FCF14FEB1F6C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BarcodeScanner-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		92E3B23432BB170B8A722551 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BarcodeScanner-BarcodeScannerUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A53F2A9130F3B23C5FAA00A6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BarcodeScanner/Pods-BarcodeScanner-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BarcodeScanner/Pods-BarcodeScanner-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BarcodeScanner/Pods-BarcodeScanner-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AC1597484D206392B72C1AA5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BarcodeScannerTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7A246D4F253E638000CF5A8A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7A246D5B253E638000CF5A8A /* ViewController.swift in Sources */,
+				7ADD977B253F023F00E85939 /* ScanVC.swift in Sources */,
+				7ADD978A253F048200E85939 /* ItemsCell.swift in Sources */,
+				7A246D57253E638000CF5A8A /* AppDelegate.swift in Sources */,
+				7ADD9780253F025600E85939 /* CartVC.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7A246D65253E638100CF5A8A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7A246D6E253E638100CF5A8A /* BarcodeScannerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7A246D70253E638100CF5A8A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7A246D79253E638100CF5A8A /* BarcodeScannerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7A246D6B253E638100CF5A8A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7A246D52253E638000CF5A8A /* BarcodeScanner */;
+			targetProxy = 7A246D6A253E638100CF5A8A /* PBXContainerItemProxy */;
+		};
+		7A246D76253E638100CF5A8A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7A246D52253E638000CF5A8A /* BarcodeScanner */;
+			targetProxy = 7A246D75253E638100CF5A8A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7A246D5C253E638000CF5A8A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7A246D5D253E638000CF5A8A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		7A246D61253E638100CF5A8A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7A246D62253E638100CF5A8A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7A246D7B253E638100CF5A8A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7A246D7C253E638100CF5A8A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7A246D7E253E638100CF5A8A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B48FA49EBD369E1723E798D4 /* Pods-BarcodeScanner.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8N6548NG99;
+				INFOPLIST_FILE = BarcodeScanner/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = brian.barcode.BarcodeScanner;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		7A246D7F253E638100CF5A8A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 303D3318EC77912E6E2FC342 /* Pods-BarcodeScanner.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8N6548NG99;
+				INFOPLIST_FILE = BarcodeScanner/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = brian.barcode.BarcodeScanner;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		7A246D81253E638100CF5A8A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CDBC2B7B336F405EFB1E61D3 /* Pods-BarcodeScannerTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = BarcodeScannerTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = brian.barcode.BarcodeScannerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BarcodeScanner.app/BarcodeScanner";
+			};
+			name = Debug;
+		};
+		7A246D82253E638100CF5A8A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 326C008633EF6751292938B5 /* Pods-BarcodeScannerTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = BarcodeScannerTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = brian.barcode.BarcodeScannerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BarcodeScanner.app/BarcodeScanner";
+			};
+			name = Release;
+		};
+		7A246D84253E638100CF5A8A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9D79EA6A0CF88470E099FD65 /* Pods-BarcodeScanner-BarcodeScannerUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = BarcodeScannerUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = brian.barcode.BarcodeScannerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = BarcodeScanner;
+			};
+			name = Debug;
+		};
+		7A246D85253E638100CF5A8A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 61D46D875F1E1261B2A4698E /* Pods-BarcodeScanner-BarcodeScannerUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = BarcodeScannerUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = brian.barcode.BarcodeScannerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = BarcodeScanner;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7A246D4E253E638000CF5A8A /* Build configuration list for PBXProject "BarcodeScanner" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7A246D7B253E638100CF5A8A /* Debug */,
+				7A246D7C253E638100CF5A8A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7A246D7D253E638100CF5A8A /* Build configuration list for PBXNativeTarget "BarcodeScanner" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7A246D7E253E638100CF5A8A /* Debug */,
+				7A246D7F253E638100CF5A8A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7A246D80253E638100CF5A8A /* Build configuration list for PBXNativeTarget "BarcodeScannerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7A246D81253E638100CF5A8A /* Debug */,
+				7A246D82253E638100CF5A8A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7A246D83253E638100CF5A8A /* Build configuration list for PBXNativeTarget "BarcodeScannerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7A246D84253E638100CF5A8A /* Debug */,
+				7A246D85253E638100CF5A8A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7A246D4B253E638000CF5A8A /* Project object */;
+}
